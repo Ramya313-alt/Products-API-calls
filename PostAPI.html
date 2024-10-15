@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Calls</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Api.css">
+
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<body>
+    <h1 class="bg-primary text-center text-white p-3"  >API Calls</h1>
+
+    <div class="d-flex justify-content-center align-items-center text-center  hide">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <form class="text-center" >
+        <input name="name" onchange="inputValues(event)" class="form-control w-50 btn-outline-warning inputs" type="text" placeholder="Enter product name..." >
+        <input name="price" onchange="inputValues(event)" class="form-control w-50 btn-outline-warning  inputs" type="number" placeholder="Enter your price...">
+        <input name="category" onchange="inputValues(event)" class="form-control w-50 btn-outline-warning  inputs" type="text" placeholder="Enter your category..." >
+        <input onchange="uploadProfile(event)" class="form-control w-50 btn-outline-warning  inputs" type="file">
+        <button class="submitBtn btn btn-primary" >Create product</button>
+
+      </form>
+      <hr >
+
+      <h1 class="text-center bg-primary text-white p-3  " >Products</h1>
+      <hr>
+    <div class="products" >
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="PostAPI.js"></script>
+</body>
+</html>

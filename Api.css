@@ -1,0 +1,23 @@
+body {
+    font-family: "Trirong", serif;
+  }
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.inputs{
+    
+        margin: 10px auto;
+    }
+
